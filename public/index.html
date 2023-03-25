@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <script src="./main.js" defer></script>
+    <title>OpenAI Time & Space Complexity Calculator</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <h2>Big(O)penAI Algorithm Complexity Calculator</h2>
+        <a
+          class="docs-link"
+          href="https://platform.openai.com/docs/introduction"
+          target="_blank"
+        >
+          OpenAI API Docs
+        </a>
+      </div>
+    </header>
+    <main>
+      <section class="display">
+        <form id="form">
+          <h3>Enter algorithm name</h3>
+          <input
+            type="text"
+            id="algorithm"
+            placeholder="Enter algorithm name"
+          />
+          <button type="submit">Calculate</button>
+        </form>
+        <h3 class="loading">Loading...</h3>
+      </section>
+
+      <section class="answer">
+        <h3 class="answer-title">Answer:</h3>
+        <h3 class="answer-text" id="answer"></h3>
+      </section>
+    </main>
+  </body>
+</html>
